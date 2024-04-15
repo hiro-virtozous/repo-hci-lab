@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="character.css">
+        <script src="character.js"></script>
+    </head>
+<body>
+    <div class="background"></div>
+    <div class="navbar-container">
+        <div class="header">
+            <div class="logo">
+                <a href="#!">
+                    <img src="Assets/Logo.png" alt=""></a>
+                </a>
+            </div>
+            <div class="line">
+                <a href="#!">Zen Dragon</a>
+            </div>
+        </div>
+        <div class="navbar-click">
+            <a href="Home.html" class="home">Home</a>
+            <a href="#character" class="character">Character</a>
+            <a href="#dragon" class="dragon">Dragon Class</a>
+            <a href="#isle" class="isle">Isle of Berk's</a>
+            <a href="#regist" class="register">Register</a>
+        </div>
+        <div class="navbar">
+            <a href="#home" class="home">Home</a>
+            <a href="#character" class="character">Character</a>
+            <a href="#dragon" class="dragon">Dragon Class</a>
+            <a href="#isle" class="isle">Isle of Berk's</a>
+            <a href="#regist" class="register">Register</a>
+        </div>
+        <button class="bar">
+            <img src="Assets/Bar.png" alt="">
+        </button>
+    </div>
+
+    <div class="character-container">
+        <p>Welcome to Our Champions</p>
+
+        <div class="character-list" onclick="showArcherDetail()">
+            <button class="archer">
+                <img src="Assets/Archer.png" alt="">
+            </button>
+            <button class="assasin" onclick="showAssasinDetail()">
+                <img src="Assets/Assasin.png" alt="">
+            </button>
+            <button class="barbarian" onclick="showBarbarianDetail()">
+                <img src="Assets/Barbarian.png" alt="">
+            </button>
+            <button class="warrior" onclick="showWarriorDetail()">
+                <img src="Assets/Warrior.png" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="detail-container">
+        <div class="archer-detail hidden" id="archerDetail">
+            <img src="Assets/Archer-detail.png" alt="">
+        </div>
+        <div class="assasin-detail hidden" id="assasinDetail">
+            <img src="Assets/Assasin-detail.png" alt="">
+        </div>
+        <div class="barbarian-detail hidden" id="barbarianDetail">
+            <img src="Assets/Barbarian-detail.png" alt="">
+        </div>
+        <div class="warrior-detail" id="warriorDetail">
+            <img src="Assets/warrior-detail.png" alt="">
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <p>Copyright © 2024 ZenDragon.com <br> powered by : Fikri & Naufal</p>
+        <div class="social-media">
+            <a href="https://youtu.be/nPmIhH775L4?si=dvNV4xlFuyyEFY6f"><img src="Assets/Youtube.png" alt=""></a>
+            <a href="https://twitter.com/i/flow/login"><img src="Assets/Twitter.png" alt=""></a>
+            <a href="https://www.twitch.tv/login"><img src="Assets/Twitch.png" alt=""></a>
+            <a href="https://www.instagram.com/accounts/login/"><img src="Assets/Instagram.png" alt=""></a>
+        </div>
+    </div>
+</body>
+</html>
