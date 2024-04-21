@@ -1,41 +1,62 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var barButton = document.querySelector('.bar');
     var navbarClick = document.querySelector('.navbar-click');
     var pageDownButton = document.querySelector('.page-down button');
 
-    barButton.addEventListener('click', function() {
+    barButton.addEventListener('click', function () {
         navbarClick.classList.toggle('active');
         var links = document.querySelectorAll('.navbar a');
-        links.forEach(function(link) {
+        links.forEach(function (link) {
             link.style.display = link.style.display === 'none' ? 'block' : 'none';
         });
     });
-});
 
-// Hide all details and show the specific detail when a button is clicked
-function showDetail(detailId) {
-    // Hide all detail sections
-    document.querySelectorAll('.detail-container div').forEach(function(div) {
-        div.style.display = 'none';
+    function hideAllDetails() {
+        document.querySelector('.archer-detail').style.display = 'none';
+        document.querySelector('.assasin-detail').style.display = 'none';
+        document.querySelector('.barbarian-detail').style.display = 'none';
+        document.querySelector('.warrior-detail').style.display = 'none';
+    }
+
+    document.querySelector('.character-list .archer').addEventListener('click', function () {
+        hideAllDetails();
+        document.querySelector('.archer-detail').style.display = 'flex';
     });
 
-    // Show the specific detail section
-    document.getElementById(detailId).style.display = 'block';
-    
-    // Show the detail container
-    document.querySelector('.detail-container').style.display = 'flex';
-}
+    document.querySelector('.assasin').addEventListener('click', function () {
+        hideAllDetails();
+        document.querySelector('.assasin-detail').style.display = 'flex';
+    });
 
-// Attach event listeners to buttons
-document.querySelector('.archer').addEventListener('click', function() {
-    showDetail('archerDetail');
+    document.querySelector('.barbarian').addEventListener('click', function () {
+        hideAllDetails();
+        document.querySelector('.barbarian-detail').style.display = 'flex';
+    });
+
+    document.querySelector('.warrior').addEventListener('click', function () {
+        hideAllDetails();
+        document.querySelector('.warrior-detail').style.display = 'flex';
+    });
+
+    const backArcher = document.querySelector('.archer-detail .back-archer');
+    const backAssasin = document.querySelector('.assasin-detail .back-assasin');
+    const backBarbarian = document.querySelector('.barbarian-detail .back-barbarian');
+    const backWarrior = document.querySelector('.warrior-detail .back-warrior');
+    backArcher.addEventListener('click', function () {
+        document.querySelector('.archer-detail').style.display = 'none';
+    });
+
+    backAssasin.addEventListener('click', function () {
+        document.querySelector('.assasin-detail').style.display = 'none';
+    });
+
+    backBarbarian.addEventListener('click', function () {
+        document.querySelector('.barbarian-detail').style.display = 'none';
+    });
+
+    backWarrior.addEventListener('click', function () {
+        document.querySelector('.warrior-detail').style.display = 'none';
+    });
 });
-document.querySelector('.assasin').addEventListener('click', function() {
-    showDetail('assasinDetail');
-});
-document.querySelector('.barbarian').addEventListener('click', function() {
-    showDetail('barbarianDetail');
-});
-document.querySelector('.warrior').addEventListener('click', function() {
-    showDetail('warriorDetail');
-});
+
+
