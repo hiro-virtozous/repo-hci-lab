@@ -75,10 +75,11 @@ body {
 
 .navbar a {
     text-align: center;
-    text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    text-decoration: none;
+    color: white; 
+    position: relative;
 }
 
 .navbar-click{
@@ -102,94 +103,24 @@ body {
     height: 24px;
 }
 
-.home::before {
-    content: "";
+.navbar a::after {
+    content: '';
     position: absolute;
-    top: 70%;
-    left: 29%;
-    right: 0;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px; 
+    border-radius: 200px;
     bottom: 0;
-    width: 0;
-    height: 2px;
-    border-radius: 50px;
-    background-color: white;
-    transition: 0.5s ease-out;
+    top: 120%;
+    left: 0;
+    background-color: white; 
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
 }
 
-.home:hover::before {
-    width: 4.5%;
-}
-
-.character::before {
-    content: "";
-    position: absolute;
-    top: 70%;
-    left: 41.3%;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    border-radius: 50px;
-    background-color: white;
-    transition: 0.5s ease-out;
-}
-
-.character:hover::before {
-    width: 6.3%;
-}
-
-.dragon::before {
-    content: "";
-    position: absolute;
-    top: 70%;
-    left: 55%;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    border-radius: 50px;
-    background-color: white;
-    transition: 0.5s ease-out;
-}
-
-.dragon:hover::before {
-    width: 8%;
-}
-
-.isle::before {
-    content: "";
-    position: absolute;
-    top: 70%;
-    left: 70%;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    border-radius: 50px;
-    background-color: white;
-    transition: 0.5s ease-out;
-}
-
-.isle:hover::before {
-    width: 8.5%;
-}
-
-.register::before {
-    content: "";
-    position: absolute;
-    top: 70%;
-    left: 85.2%;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    border-radius: 50px;
-    background-color: white;
-    transition: 0.5s ease-out;
-}
-
-.register:hover::before {
-    width: 6%;
+.navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .character-container{

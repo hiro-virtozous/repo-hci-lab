@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var barButton = document.querySelector('.bar');
     var navbarClick = document.querySelector('.navbar-click');
-    var pageDownButton = document.querySelector('.page-down button');
 
     barButton.addEventListener('click', function () {
         navbarClick.classList.toggle('active');
