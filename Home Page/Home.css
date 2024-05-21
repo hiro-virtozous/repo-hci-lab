@@ -535,27 +535,9 @@
             height: 24px;
         }
 
-        .home::before,
-        .character::before,
-        .dragon::before,
-        .isle::before,
-        .register::before {
-            display: none;
-        }
-
-        .home:hover::before,
-        .character:hover::before,
-        .dragon:hover::before,
-        .isle:hover::before,
-        .register:hover::before {
-            display: none;
-        }
-
         .top-banner{
             margin-top: 20%;
         }
-
-        .topa lsad
         
         .body-banner{
             margin-top: 10%;

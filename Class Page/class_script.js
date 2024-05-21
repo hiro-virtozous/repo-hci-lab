@@ -5,6 +5,19 @@ const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const carouselChildrens = [...carousel.children];
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var barButton = document.querySelector('.bar');
+    var navbarClick = document.querySelector('.navbar-click');
+    var pageDownButton = document.querySelector('.page-down button');
+
+    barButton.addEventListener('click', function() {
+        navbarClick.classList.toggle('active');
+        var links = document.querySelectorAll('.navbar a');
+        links.forEach(function(link) {
+            link.style.display = link.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+});
 
 let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
 
