@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="class_styles.css">
+        <link rel="stylesheet" href="navbarStyles.css">
+        <script src="class_script.js" defer></script>
+        <script src="navbarScript.js" defer></script>
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="header">
+            <div class="logo">
+                <a href="#!">
+                    <img src="Assets/Logo.png" alt=""></a>
+                </a>
+            </div>
+            <div class="line">
+                <a href="#!">Zen Dragon</a>
+            </div>
+        </div>
+        <div class="navbar-click">
+            <a href="Home.html" class="home">Home</a>
+            <a href="#character" class="character">Character</a>
+            <a href="#dragon" class="dragon">Dragon Class</a>
+            <a href="#isle" class="isle">Isle of Berk's</a>
+            <a href="#regist" class="register">Register</a>
+        </div>
+        <div class="navbar">
+            <a href="#home" class="home">Home</a>
+            <a href="#character" class="character">Character</a>
+            <a href="#dragon" class="dragon">Dragon Class</a>
+            <a href="#isle" class="isle">Isle of Berk's</a>
+            <a href="#regist" class="register">Register</a>
+        </div>
+        <button class="bar">
+            <img src="Assets/Bar.png" alt="">
+        </button>
+    </div>
+<div class="mainContent">
+        <div class="wrapper">
+            <div class="arrow left" id="left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="black" d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0"/></svg>
+            </div>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="assets/Elemental_Angin.png" alt="img" draggable="false"></div>
+                    <h2>Wind Whisperers</h2>
+                    <a href="#popup-wind" class="btn">View More</a>
+                    
+                </li>
+                
+                <li class="card">
+                    <div class="img"><img src="assets/Elemental_Api.png" alt="img" draggable="false"></div>
+                    <h2>Flameforge Masters</h2>
+                    <a href="#popup-flame" class="btn">View More</a>
+                </li>
+                
+                <li class="card">
+                    <div class="img"><img src="assets/Elemental_Burung.png" alt="img" draggable="false"></div>
+                    <h2>Luminance Wardens</h2>
+                    <a href="#popup-lumi" class="btn">View More</a>
+                </li>
+            
+                <li class="card">
+                    <div class="img"><img src="assets/Elemental_Gelep.png" alt="img" draggable="false"></div>
+                    <h2>Dark Magisters</h2>
+                    <a href="#popup-dark" class="btn">View More</a>
+                </li>
+            
+                <li class="card">
+                    <div class="img"><img src="assets/Elemental_Petir.png" alt="img" draggable="false"></div>
+                    <h2>Lightning Reavers</h2>
+                    <a href="#popup-light" class="btn">View More</a>
+                </li>
+        </ul>
+        <div class="arrow right" id="right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="black" d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0"/></svg>
+        </div>
+    </div>
+    <div class="popup" id="popup-wind">
+        <div class="popup__content">
+            <div class="popup__img">
+                <img src="assets/Background-card-wind.png" alt="">
+            </div>
+            <div class="content-wrap">
+                <h1>Wind Whisperers</h1>
+                <p>
+                    "Wind Whisperers" is a class specifically designed for dragons who understand the power and grace of the wind. They are agile inhabitants of the sky, harnessing the wind with gentleness and precision.
+                    <br>
+                    <br>
+                    Dragons who follow the path of Wind Whisperers develop a strong bond with the element of wind, understanding its subtle yet powerful flows and movements. They learn to harness the power of the wind to traverse the skies with astonishing speed and to use it to their advantage in battles.
+                </p>
+                <a href="#" class="btn popup__btn">Close</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-flame">
+        <div class="popup__content">
+            <div class="popup__img">
+                <img src="assets/Background-card-flame.png" alt="">
+            </div>
+            <div class="content-wrap">
+                <h1>Flameforge Masters</h1>
+                <p>
+                    "Flameforge Masters" is a class specifically tailored for dragons who embrace the power and might of the blazing fire. They are the masters of the fire element, wielding the ability to generate and control flames with remarkable precision and grace.
+                    <br>
+                    <br>
+                    Dragons who choose the path of Flameforge Masters undergo rigorous training and deep meditation, fostering a spiritual bond with the engulfing element of fire. They comprehend the flow and potency of fire in all its forms, from roaring flames to smoldering embers.
+                </p>
+                <a href="#" class="btn popup__btn">Close</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-lumi">
+        <div class="popup__content">
+            <div class="popup__img">
+                <img src="assets/Background-card-lumi.png" alt="">
+            </div>
+            <div class="content-wrap">
+                <h1>Luminance Wardens</h1>
+                <p>
+                    "Luminance Wardens" is a unique class tailored for dragons who have embraced the fiery power of light. They are the guardians of light, bringing the warmth and wisdom of the sun as well as the radiant power of the blazing fire.
+                    <br>
+                    <br>
+                    Dragons who embark on the path of Luminance Wardens have chosen to become protectors against darkness, bringing light in its purest and most enchanting form. They learn to control the energy of light with finesse and precision, understanding how to channel it to bring goodness to those in need and to repel the evil that lurks in the shadows.
+                </p>
+                <a href="#" class="btn popup__btn">Close</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-dark">
+        <div class="popup__content">
+            <div class="popup__img">
+                <img src="assets/Background-card-dark.png" alt="">
+            </div>
+            <div class="content-wrap">
+                <h1>Dark Magisters</h1>
+                <p>
+                    "Dark Magisters" is a class specifically tailored for dragons who have tapped into the hidden power of darkness within their realm. They are masters of the dark arts, wielding black magic with intelligence and sinister grace.
+                    <br>
+                    <br>
+                    Dragons who tread the path of Dark Magisters have ventured into the realm of mystery and danger, exploring the streams of dark energy that course through their world. They delve into hidden knowledge of curses, sorcery, and other forbidden powers, honing their abilities to manipulate and control darkness itself.
+                </p>
+                <a href="#" class="btn popup__btn">Close</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-light">
+        <div class="popup__content">
+            <div class="popup__img">
+                <img src="assets/Background-card-light.png" alt="">
+            </div>
+            <div class="content-wrap">
+                <h1>Lightning Reavers</h1>
+                <p>
+                    "Lightning Reavers" is a class specifically crafted for dragons who command the formidable power of lightning. They are unrivaled hunters of the sky, wielding lightning bolts to devastate enemies and dominate the battlefield.
+                    <br>
+                    <br>
+                    Dragons who choose the path of Lightning Reavers undergo intensive training and develop a profound bond with the element of lightning. They learn to summon and direct lightning bolts with deadly precision, harnessing the power of nature to bolster their attacks.
+                </p>
+                <a href="#" class="btn popup__btn">Close</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
