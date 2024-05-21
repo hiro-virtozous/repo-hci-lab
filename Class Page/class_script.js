@@ -3,9 +3,6 @@ const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".wrapper .arrow");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const carouselChildrens = [...carousel.children];
-// const showPopup = document.getElementById("wind");
-// const popupContainer = document.querySelector(".popup-container");
-// const closeBtn = document.getElementById("close-wind");
 
 
 
