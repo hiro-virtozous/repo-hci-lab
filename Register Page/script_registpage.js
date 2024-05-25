@@ -29,15 +29,6 @@ function handleform_1_next_btn(){
     form_2_progressbar.classList.add("active");
 }
 
-// form_1_next_btn.addEventListener("click", function(){
-//     form_1.style.display = "none";
-//     form_2.style.display = "block";
-    
-//     form_1_btns.style.display = "none";
-//     form_2_btns.style.display = "flex";
-
-//     form_2_progressbar.classList.add("active");
-// });
 
 form_2_back_btn.addEventListener("click", function(){
     form_1.style.display = "block";
@@ -60,15 +51,7 @@ function handleform_2_next_btn(){
     form_3_progressbar.classList.add("active");
 }
     
-// form_2_next_btn.addEventListener("click", function(){
-//     form_2.style.display = "none";
-//     form_3.style.display = "block";
-    
-//     form_2_btns.style.display = "none";
-//     form_3_btns.style.display = "flex";
 
-//     form_3_progressbar.classList.add("active");
-// });
 
 form_3_back_btn.addEventListener("click", function(){
     form_2.style.display = "block";
