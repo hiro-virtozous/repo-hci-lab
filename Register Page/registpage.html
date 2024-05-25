@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style_registpage.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="wrapper glass">
+        <div class="header">
+            <ul>
+                <li class="active form_1_progressbar">
+                    <div>
+                        <p>1</p>
+                    </div>
+                </li>
+                <li class="form_2_progressbar">
+                    <div>
+                        <p>2</p>
+                    </div>
+                </li>
+                <li class="form_3_progressbar">
+                    <div>
+                        <p>3</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="form_wrap">
+            <div class="form_1 data_info">
+                <h2>Signup Info</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap" id="form-mail">
+                            <label for="email_address">Email Address</label>
+                            <input type="text" class="Email Address" id="email address" placeholder="Email Address">
+                            <p class="log" id="error-mail"></p>
+                        </div>
+
+                        <div class="input_wrap" id="form-password">
+                            <label for="password">Password</label>
+                            <input type="text" class="Password" id="password" placeholder="Password">
+                            <p class="log" id="error-password"></p> 
+                        </div>
+                        
+                        <div class="input_wrap" id="form-confirm-password">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="text" class="Confirm Password" id="confirm_password" placeholder="Confirm Password">
+                            <p class="log" id="error-conf-password"></p> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_2 data_info" >
+                <h2>Personal Info</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap" id="form-user-name">
+                            <label for="user_name">User Name</label>
+                            <input type="text" class="User Name" id="user_name" placeholder="User Name">
+                            <p class="log" id="error-user-name"></p> 
+                        </div>
+                        
+                        <div class="input_wrap">
+                            <label for="first_name"></label>
+                            <input type="text" class="First Name" id="first_name" placeholder="First Name">
+                            <p class="log" id="error-first-name"></p> 
+                        </div>
+                        
+                        <div class="input_wrap">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" class="Last Name" id="last_name" placeholder="Last Name">
+                            <p class="log" id="error-last-name"></p> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_3 data_info">
+                <h2>Personal Info</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="current_company">Date Of Birth</label>
+                            <input type="date" >
+                        </div>
+
+                        <div class="input_wrap" id="form-age">
+                            <label for="age">Age</label>
+                            <input type="text" class="age" id="age" placeholder="Age">
+                            <p class="log" id="error-age"></p> 
+                        </div>
+
+                        <div class="input_wrap">
+                            <label for="gender">Gender</label>
+                            <div class="radio_group">
+                                <input type="radio" name="value" id="gender1">
+                                <label for="gender1" class="gender-label1">Male</label>
+                            
+                                <input type="radio" name="value" id="gender2">
+                                <label for="gender2" class="gender-label2">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="btns_wrap">
+            <div class="common_btns form_1_btns">   
+                <button type="button" class="btn_next">Next
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#ececec" d="M13.47 8.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H6.5a.75.75 0 0 1 0-1.5h9.69z"/></svg>
+                    </span>
+                </button>
+            </div>
+            <div class="common_btns form_2_btns">
+                <button type="button" class="btn_back">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#ececec" d="M11.03 8.53a.75.75 0 1 0-1.06-1.06l-4 4a.748.748 0 0 0 0 1.06l4 4a.75.75 0 1 0 1.06-1.06l-2.72-2.72H18a.75.75 0 0 0 0-1.5H8.31z"/></svg>
+                    </span>
+                    Back
+                </button>
+                <button type="button" class="btn_next">Next
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#ececec" d="M13.47 8.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H6.5a.75.75 0 0 1 0-1.5h9.69z"/></svg>
+                    </span>
+                </button>
+            </div>
+            <div class="common_btns form_3_btns">
+                <button type="button" class="btn_back">
+                    <span class="icon">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#ececec" d="M11.03 8.53a.75.75 0 1 0-1.06-1.06l-4 4a.748.748 0 0 0 0 1.06l4 4a.75.75 0 1 0 1.06-1.06l-2.72-2.72H18a.75.75 0 0 0 0-1.5H8.31z"/></svg>
+                        </span>
+                    </span>
+                    Back
+                </button>
+                <button type="button" class="btn_done">Done
+                    <span class="icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<div class="modal_wrapper">
+    <div class="shadow"></div>
+    <div class="success_wrap">
+        <span class="modal_icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="#ececec" d="m232.49 80.49l-128 128a12 12 0 0 1-17 0l-56-56a12 12 0 1 1 17-17L96 183L215.51 63.51a12 12 0 0 1 17 17Z"/></svg>
+        </span>
+        <p>Your have successfully completed the process.</p>
+    </div>
+</div>
+
+    <script type="text/javascript" src="script_registpage.js"></script>
+</body>
+</html>
