@@ -493,22 +493,6 @@
             height: 24px;
         }
 
-        .home::before,
-        .character::before,
-        .dragon::before,
-        .isle::before,
-        .register::before {
-            display: none;
-        }
-
-        .home:hover::before,
-        .character:hover::before,
-        .dragon:hover::before,
-        .isle:hover::before,
-        .register:hover::before {
-            display: none;
-        }
-
         .text-container {
             top: 2%;
             height: 69vh;

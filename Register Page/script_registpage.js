@@ -19,6 +19,20 @@ var modal_wrapper = document.querySelector(".modal_wrapper");
 var shadow = document.querySelector(".shadow");
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var barButton = document.querySelector('.bar');
+    var navbarClick = document.querySelector('.navbar-click');
+    var pageDownButton = document.querySelector('.page-down button');
+
+    barButton.addEventListener('click', function() {
+        navbarClick.classList.toggle('active');
+        var links = document.querySelectorAll('.navbar a');
+        links.forEach(function(link) {
+            link.style.display = link.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+});
+
 function handleform_1_next_btn(){
     form_1.style.display = "none";
     form_2.style.display = "block";
