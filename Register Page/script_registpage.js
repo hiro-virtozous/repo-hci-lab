@@ -106,7 +106,7 @@ const handleFormMail = (event) => {
     validMail = 1;
 }
 
-form_mail.addEventListener('mousemove', handleFormMail)
+window.addEventListener('mousemove', handleFormMail)
 
 
 // validasi password
@@ -159,8 +159,10 @@ const handleFormPassword = (event) => {
     validPwd = -1
     event.preventDefault();
     if(!isContainCapital(passwordElement.value) || !isContainLowerCase(passwordElement.value) || !isContainNumeric(passwordElement.value)){
-        passwordElement.style.borderColor = "#ff5252";
-        errorElement_password.innerHTML = "Password must contain atleast one lowercase uppercase and number"
+        if(validMail == 1){
+            passwordElement.style.borderColor = "#ff5252";
+            errorElement_password.innerHTML = "Password must contain atleast one lowercase uppercase and number"
+        }
         return
     }
     errorElement_password.innerHTML = ''
@@ -168,7 +170,7 @@ const handleFormPassword = (event) => {
     validPwd = 1
 }
 
-form_password.addEventListener('mousemove', handleFormPassword)
+window.addEventListener('mousemove', handleFormPassword)
 
 validConfPwd = -1
 const handleFormConfirmPassword = (event) => {
@@ -184,7 +186,7 @@ const handleFormConfirmPassword = (event) => {
     confirmPasswordElement.style.borderColor = '';
     validConfPwd = 1
 }
-form_confirm_password.addEventListener('mousemove', handleFormConfirmPassword)
+window.addEventListener('mousemove', handleFormConfirmPassword)
 
 
 valid = -1;
@@ -228,7 +230,7 @@ const handleFormUserName = (event) => {
     validUsrNm = 1
 }
 
-form_user_name.addEventListener("mousemove", handleFormUserName);
+window.addEventListener("mousemove", handleFormUserName);
 
 const first_nameElement = document.getElementById('first_name')
 const last_nameElement = document.getElementById('last_name')
@@ -278,10 +280,19 @@ const errorElement_age = document.getElementById('error-age')
 const handleAgeForm = (event) => {
     event.preventDefault();
     if(!isNumeric(ageElement.value)){
-        errorElement_age.innerHTML = "the value must be number & positive number"
+        form_age.borderColor = "#ff5252";
+        errorElement_age.innerHTML = "the value must be number & positive number";
         return
     }
-    errorElement_age.innerHTML = ""
+    errorElement_age.innerHTML = "";
+    form_age.borderColor = "";
 }
 
-form_age.addEventListener("mousemove", handleAgeForm);
+window.addEventListener("mousemove", handleAgeForm);
+
+
+const button_done = document.querySelector("button.modal_icon");
+
+button_done.addEventListener("click", function(e) {
+    window.location.href = "../Home Page/Home.html"
+})
