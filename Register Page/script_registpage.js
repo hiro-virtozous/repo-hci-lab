@@ -303,10 +303,3 @@ const handleAgeForm = (event) => {
 }
 
 window.addEventListener("mousemove", handleAgeForm);
-
-
-const button_done = document.querySelector("button.modal_icon");
-
-button_done.addEventListener("click", function(e) {
-    window.location.href = "../Home Page/Home.html"
-})
